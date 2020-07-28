@@ -1,0 +1,179 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    width: 1600px;
+    height: 100%;
+    background-color: #f4f4f4;
+    margin: auto;
+}
+
+header a {
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    color: Black;
+    font-weight: bold;
+    padding: 10px 50px;
+    font-size: 18pt;
+}
+
+nav {
+
+    top: 20px;
+    right: 80px;
+    text-align: right;
+
+    height: 72px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+article {
+    margin-top: 50px;;
+    clear: both;
+}
+
+footer {
+    background-color: grey;
+    padding: 10px;
+    text-align: right;
+    margin-top: 50px;
+}
+
+#login-btn {
+    font-weight: bold;
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-style: none;
+}
+
+#login-btn:hover {
+    font-weight: bold;
+    background-color: transparent;
+    color: #3498db;
+    border: none;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-style: none;
+}
+
+#signup-btn {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 70px;
+}
+
+#signup-btn:hover {
+    font-weight: bold;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 70px;
+}
+
+#welcome {
+    background-image: url("images/tp-h2-bg.jpg");
+    width: 1600px;
+    height: 500px;
+}
+
+#welcome button {
+    font-weight: bold;
+    position: relative;
+    top: 350px;
+    left: 200px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 70px;
+}
+
+#welcome button:hover {
+    font-weight: bold;
+    position: relative;
+    top: 350px;
+    left: 200px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 70px;
+}
+
+#top-picks {
+    width: 1600px;
+    height: 1628px;
+}
+
+#tp-h2 {
+    font-size: 72pt;
+    color: white;
+    background-image: url("images/tp-h2-bg.jpg");
+    height: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+#todays-menu {
+    width: 1600px;
+    height: 1628px;
+}
+
+#tm-h2 {
+    font-size: 72pt;
+    color: white;
+    background-image: url("images/tp-h2-bg.jpg");
+    height: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.dp-tb-sm {
+    margin: auto;
+}

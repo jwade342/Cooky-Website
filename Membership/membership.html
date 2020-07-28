@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | Cooky</title>
+  <link href="membership.css" rel="stylesheet" />
+  <script src="membership.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="content-wrap">
+        <h2>Membership Sign Up</h2>
+      </div>
+    </header>
+
+    <section class="content">
+      <div class="content-wrap">
+        <section class="register">
+          <h3>Please complete all the fields below</h3>
+          <form>
+            <table>
+              <tr>
+                <td>First Name:</td>
+                <td><Input id="fName" required /></td>
+              </tr>
+              <tr>
+                <td>Last Name:</td>
+                <td><Input id="lName" required /></td>
+              </tr>
+              <tr>
+                <td>Age:</td>
+                <td>
+                  <Input id="age" type="number" required />
+                  <p class="errorMsg" id="ageError"></p>
+                </td>
+              </tr>
+              <tr>
+                <td>Address:</td>
+                <td><Input id="address" required /></td>
+              </tr>
+              <tr>
+                <td>City:</td>
+                <td><Input id="city" required /></td>
+              </tr>
+              <tr>
+                <td>Postal Code:</td>
+                <td>
+                  <Input id="code" placeholder="a0a0a0" required />
+                  <p class="errorMsg" id="codeError"></p>
+                </td>
+              </tr>
+              <tr>
+                <td>Province:</td>
+                <td>
+                  <select required>
+                    <option>Select...</option>
+                    <option>ON</option>
+                    <option>QC</option>
+                    <option>MN</option>
+                    <option>SK</option>
+                    <option>AB</option>
+                    <option>BC</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Password:</td>
+                <td><Input id="pwd" type="password" required /></td>
+              </tr>
+              <tr>
+                <td>Confirm Password:</td>
+                <td>
+                  <Input id="pwd2" type="password" required />
+                  <p class="errorMsg" id="passwordError"></p>
+                </td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td>
+                  <input id="email" placeholder="johndoe@example.com" required />
+                  <p class="errorMsg" id="emailError"></p>
+                </td>
+              </tr>
+            </table>
+            <div>
+              <button id="submit" type="submit">Register Now</button>
+              <button type="reset">Clear Form</button>
+            </div>
+          </form>
+        </section>
+
+        <section id="profile">
+          <h3>Profile</h3>
+          <table>
+            <tr>
+              <td><h4>Full Name:</h4></td>
+              <td>
+                <p id="profileName"></p>
+              </td>
+            </tr>
+            <tr>
+              <td><h4>Email:</h4></td>
+              <td>
+                <p id="profileEmail"></p>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <a href="../index.html">Back to Home</a>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="content-wrap">Copyright 2020 &copy; Teng Xie</div>
+    </footer>
+  </main>
+</body>
+</html>

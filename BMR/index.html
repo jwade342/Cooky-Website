@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Best BMR Caluclator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src=script.js></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="header">
+            <h1>BMR Calculator</h1>
+        </div>
+
+        <div id="content">
+            <div id="nav">
+                <a href="index.html" style="background-color: #b5eaaa">Metric</a>
+                <a href="imperial.html">Imperial</a>
+            </div>
+
+            <div id="main">
+                <form id="myForm">
+                    <div id="basicInfo">
+                        <p>
+                            <label for="gender">Gender</label>
+                            <select id="gender" class="tBox">
+                                <option>choose....</option>
+                                <option>male</option>
+                                <option>female</option>
+                            </select>
+
+                            <label for="age">Age</label>
+                            <input type="number" id="age" class="tBox">&nbsp;&nbsp;
+                        </p>
+
+                        <p>
+                            <label for="weight">Weight&nbsp;(kg)&nbsp;&nbsp;</label>
+                            <input type="number" id="weight" class="tBox">&nbsp;&nbsp;
+
+                            <label for="height">Height&nbsp;(cm)&nbsp;&nbsp;</label>
+                            <input type="number" id="height" class="tBox"><br>
+                        </p>
+                    </div>
+
+                    <div id="actLevel">
+                        <p>
+                            <label>Activity Level:</label>
+                        </p>
+
+                        <input type="radio" id="lightAct" name="lightAct">
+                        <label>Sedenttary or ligtht activity</label>
+                        <br>
+                        <input type="radio" id="mediumAct" name="mediumAct">
+                        <label>Active or moderatly active</label>
+                        <br>
+                        <input type="radio" id="heavyAct" name="heavyAct">
+                        <label>Vigorously active</label>
+
+                    </div>
+                </form>
+                <br>
+
+                <div id="result">
+                    <p id="resultBox"></p>
+                    <input type="button" id="submitBtn" value="Calculate" onclick="calculateBmr()">
+                    <input type="button" id="resetBtn" value="Reset" onclick="resetForm()">
+                                       
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            Copyright &copy; 2020 Teng Xie
+        </div>
+    </div>
+</body>
+
+</html>

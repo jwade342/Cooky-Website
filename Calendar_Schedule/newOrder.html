@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>New Order | Cooky</title>
+  <link rel="stylesheet" href="newOrder.css" />
+</head>
+
+<body>
+  <header>
+    <div class="content-wrap">
+      <h2>New Order</h2>
+      <h2>Lunch selections</h2>
+    </div>
+  </header>
+
+  <article>
+    <div class="content-wrap flex-container">
+      <form class="flex-item">
+        <table class="selection">
+          <tr>
+            <td>
+              <input type="checkbox" id="item1" value="1599" />
+            </td>
+            <td>
+              Hotpot Base ($15.99)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="item2" value="899" />
+            </td>
+            <td>
+              Beef ($8.99)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="item3" value="999" />
+            </td>
+            <td>
+              Vegie Box ($9.99)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="item4" value="1099" />
+            </td>
+            <td>
+              Lamb ($10.99)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="item5" value="699" />
+            </td>
+            <td>
+              Noodle ($6.99)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="item6" value="599" />
+            </td>
+            <td>
+              Tofu ($5.99)
+            </td>
+          </tr>
+        </table>
+        <input id="submit" type="button" value="Calculate Total" />
+      </form>
+      <table class="flex-item total">
+        <tbody>
+          <tr>
+            <td>Item total</td>
+            <td id="subtotal">0.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td id="tax">0.00</td>
+          </tr>
+          <tr>
+            <td>Total with tax</td>
+            <td id="total">$0.00</td>
+          </tr>
+      </table>
+    </div>
+  </article>
+  <div class="content-wrap">
+    <a href="../index.html">Back to Home</a>
+  </div>
+  <script defer>
+    // function to add values of selected check boxes and display total
+    function calcTotal() {
+      var itemTotal = 0;
+      var tax = 0;
+      var totalWithTax = 0;
+      var items = document.getElementsByTagName("input");
+      var subtotal = document.getElementById("subtotal");
+      var tax = document.getElementById("tax");
+      var total = document.getElementById("total");
+      for (var i = 0; i < 6; i++) {
+        if (items[i].checked) {
+          itemTotal += (items[i].value * 1);
+        }
+      }
+      tax = itemTotal * 0.13;
+      totalWithTax = itemTotal + tax;
+      subtotal.innerHTML = (itemTotal / 100).toFixed(2);
+      tax.innerHTML = tax;
+      total.innerHTML = "$" + (totalWithTax / 100).toFixed(2);
+    }
+
+    // add event listener to Submit button
+    var submitButton = document.getElementById("submit");
+    if (submitButton.addEventListener) {
+      submitButton.addEventListener("click", calcTotal, false);
+    } else if (submitButton.attachEvent) {
+      submitButton.attachEvent("onclick", calcTotal);
+    }
+  </script>
+</body>
+
+</html>

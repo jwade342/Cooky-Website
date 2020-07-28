@@ -1,0 +1,53 @@
+/* Global styles
+--------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #36393bff;
+  background-color: #048a81;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px 0 30px;
+}
+
+/* Header styles
+--------------------------------------*/
+
+header {
+  background-color: white;
+}
+
+/* Register Form styles
+--------------------------------------*/
+
+.content {
+  background-color: white;
+}
+
+/* Profile styles
+--------------------------------------*/
+
+
+
+/* Footer styles
+--------------------------------------*/
+
+footer {
+  clear: both;
+}
