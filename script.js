@@ -38,7 +38,7 @@ list.insertBefore(lList, instPosition);
 // Crreat Location Link, append to Location List
 var lLink = document.createElement("a");
 lLink.innerHTML = "Location";
-lLink.href = "https://www.haidilao.com/en/index/index.html"
+lLink.href = "Location/maps.html"
 lList.appendChild(lLink);
 // ---------- Location Link End ----------------
 

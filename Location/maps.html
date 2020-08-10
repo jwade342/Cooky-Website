@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Location | Cooky</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACnhJTi9hf41lTeAMr97iz8i3QtRpycvQ&callback=initMap"
+    defer></script>
+  <script src="maps.js" defer></script>
+
+  <style>
+    #map {
+      height: 100%;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .map {
+      width: 800px;
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="game"></div>
+  <div class="map">
+    <div id="map"></div>
+  </div>
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 39.912729, lng: 116.395985 },
+        zoom: 15,
+      });
+    }
+  </script>
+</body>
+
+</html>
